@@ -149,3 +149,46 @@ nav .active a, nav a:hover{
     font-size:13px;
     color: white;
 }
+
+#geral{
+    display:flex;
+    justify-content:center;
+}
+
+#geral section{
+    flex:2;
+}
+
+#geral aside{    
+    flex:1;
+}
+
+.widget_title{
+    margin: 30px 0px 20px 0px;
+}
+
+.widget_title_text{
+    color: black;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.widget_title_bar{
+    width: 50px;
+    height: 3px;
+    background-color: #39aae1;
+    margin-top: 10px;
+}
+
+.card_departments{
+    flex: 2;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+}
+
+.card_departments_item{
+    width: 150px;
+    height: 150px;
+    background-color: #02a2d9;
+}

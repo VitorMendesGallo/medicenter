@@ -93,9 +93,7 @@ nav .active a, nav a:hover{
 }
 
 .banner_options{
-    height: 210px;
     display: flex;
-    
 }
 
 .banner1, .banner2, .banner3{
@@ -121,7 +119,7 @@ nav .active a, nav a:hover{
 }
 
 .banner_desc{
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -131,7 +129,7 @@ nav .active a, nav a:hover{
     border: 1px solid white;
     padding: 5px;
     color: white;
-    font-size: 13px;
+    font-size: 16px;
     text-decoration: none;
 }
 
@@ -146,7 +144,7 @@ nav .active a, nav a:hover{
     border-bottom: 1px solid #ffffff4c;
     padding-bottom: 8px;
     margin-bottom: 8px;
-    font-size:13px;
+    font-size:14px;
     color: white;
 }
 
@@ -192,3 +190,42 @@ nav .active a, nav a:hover{
     height: 150px;
     background-color: #02a2d9;
 }
+
+.appointment{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.appointment_text{
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.appointment_contact ul, .appointment_contact li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.appointment_contact li{
+    border-top: solid rgba(0, 0, 0, 0.355) 1px ;
+    padding: 10px 0px;
+    font-size: 16px;
+}
+
+.appointment_contact li:last-child{
+    border-bottom: solid rgba(0, 0, 0, 0.355) 1px ;
+}
+
+.appointment_contact a{
+    text-decoration: none;
+    color: #39aae1;
+    transition-duration: .1s;
+}
+
+.appointment_contact a:hover{
+    color: #106ca9;
+}
+    

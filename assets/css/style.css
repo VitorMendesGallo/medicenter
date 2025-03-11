@@ -195,6 +195,11 @@ nav .active a, nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.left-arrow:hover , .right-arrow:hover{
+    background-color: #39aae1;
 }
 
 .card_departments{
@@ -368,7 +373,7 @@ footer .widget_title_text{
 
 .clinic_center_text{
     color: #5c5c5c;
-    font-size: 14px;
+    font-size: 13px;
     text-align: justify;
     padding-right: 10px;
 }
@@ -376,7 +381,7 @@ footer .widget_title_text{
 .clinic_center_info{
     display: flex;
     margin-top: 15px;
-    font-size: 14px;
+    font-size: 13px;
     justify-content: space-between;
 }
 
@@ -413,6 +418,38 @@ footer .widget_title_text{
 
 .relative{
     position: relative;
+}
+
+.latest_posts{
+    list-style-type:"\1F816\0020";
+    list-style-position: inside;
+    color: #c3c3c3;
+    font-size: 13px;
+
+}
+
+.latest_tweets{
+    list-style-type:"\1F816\0020";
+    list-style-position: inside;
+    color: #5c5c5c;
+    font-size: 13px;
+}
+
+.latest_posts_text{
+    margin-bottom: 10px;
+}
+
+.latest_posts_date{
+    display: block;
+    padding-top: 3px;
+    color: #39aae1;
+    font-size: 12px;
+    transition: text-decoration 0.3s ease;
+}
+
+.latest_posts_date:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 footer .footer_copy{

@@ -19,6 +19,7 @@ header {
 .logo {
   display: flex;
   align-items: center;
+  padding-left: 10px;
 }
 
 .menu {
@@ -70,6 +71,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0px 10px;
 }
 
 .banner_headline h1 {
@@ -160,6 +162,10 @@ nav a:hover {
 
 #geral aside {
   flex: 1;
+}
+
+.widget {
+  padding: 0px 10px;
 }
 
 .widget_title {
@@ -268,7 +274,7 @@ nav a:hover {
 article {
   flex: 1;
   min-width: 300px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 article a {
@@ -466,4 +472,47 @@ footer .footer_copy {
   font-size: 12px;
   padding: 20px;
   text-align: center;
+}
+
+@media (max-width: 900px) {
+  .footer_area {
+    flex-direction: column;
+  }
+
+  .footer_area_item {
+    padding-left: 20px;
+  }
+
+  .clinic_center_info {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 700px) {
+  #banner {
+    height: auto;
+  }
+
+  .banner_headline {
+    min-height: 400px;
+  }
+
+  .banner_headline h1 {
+    font-size: 60px;
+  }
+
+  .banner_headline h2 {
+    font-size: 17px;
+  }
+
+  .banner_options {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .banner1,
+  .banner2,
+  .banner3 {
+    flex-basis: 148px;
+  }
 }

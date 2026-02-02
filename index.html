@@ -4,6 +4,16 @@
     <meta name="viewport" content="width=device-width, user-scalable=0" />
     <title>MediCenter</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="text/javascript">
+      window.onload = function () {
+       const menuBtn = document.querySelector(".menuMobile");
+       const menu = document.querySelector(".menu nav ul");
+
+       menuBtn.addEventListener("click", function(){
+        menu.classList.toggle("ativado")
+       }) 
+      };
+    </script>
   </head>
 
   <body>
@@ -14,6 +24,11 @@
         </div>
         <div class="menu">
           <nav>
+            <div class="menuMobile">
+              <div class="mmline"></div>
+              <div class="mmline"></div>
+              <div class="mmline"></div>
+            </div>
             <ul>
               <li class="active"><a href="">HOME</a></li>
               <li><a href="">HOME</a></li>

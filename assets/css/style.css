@@ -474,6 +474,20 @@ footer .footer_copy {
   text-align: center;
 }
 
+.menuMobile {
+  display: none;
+  width:40px;
+  height: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px ;
+  margin-right:20px ;
+}
+
+.mmline{
+  height: 3px;
+  background-color: #39aae1;
+}
+
 @media (max-width: 900px) {
   .footer_area {
     flex-direction: column;
@@ -489,8 +503,41 @@ footer .footer_copy {
 }
 
 @media (max-width: 700px) {
+  header {
+    height: auto;
+  }
+
+  .logo{ 
+    padding-left: 20px;
+  }
+
+  header .container {
+    flex-direction: row;
+  }
+
+  .menu nav ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: white;
+
+  }
+
+  .menu nav ul.ativado {
+    max-height: 500px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
   #banner {
     height: auto;
+    background-position-x: 70%;
   }
 
   .banner_headline {
@@ -498,7 +545,7 @@ footer .footer_copy {
   }
 
   .banner_headline h1 {
-    font-size: 60px;
+    font-size: 55px;
   }
 
   .banner_headline h2 {
@@ -514,5 +561,19 @@ footer .footer_copy {
   .banner2,
   .banner3 {
     flex-basis: 148px;
+  }
+
+  aside .widget:last-child {
+    margin-bottom: 50px;
+  }
+
+  .footer_menu {
+    flex-direction: column;
+  }
+
+  .menuMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 }
